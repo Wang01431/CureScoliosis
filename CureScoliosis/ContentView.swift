@@ -7,15 +7,47 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View {    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                Section("Scoliosis") {
+                    NavigationLink {
+                        // ..
+                    } label: {
+                        Label("Changes", systemImage: "chart.xyaxis.line")
+                    }
+                }
+
+                Section("Schroth Method") {
+                    NavigationLink {
+                        // ..
+                    } label: {
+                        Label("Check Off", systemImage: "checklist")
+                    }
+
+                    NavigationLink {
+                        // ..
+                    } label: {
+                        Label("Homework", systemImage: "doc.plaintext")
+                    }
+                    
+                    NavigationLink {
+                        // ..
+                    } label: {
+                        Label("Records", systemImage: "calendar")
+                    }
+
+
+                    NavigationLink {
+                        // ..
+                    } label: {
+                        Label("Library", systemImage: "tray.full")
+                    }
+                }
+            }
+            .listStyle(.sidebar)
         }
-        .padding()
     }
 }
 
