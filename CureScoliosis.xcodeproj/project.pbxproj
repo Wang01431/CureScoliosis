@@ -23,6 +23,7 @@
 		5DC80E4F2B91FE6D009F4956 /* CureScoliosis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CureScoliosis.entitlements; sourceTree = "<group>"; };
 		5DC80E592B91FFFC009F4956 /* HelpCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommands.swift; sourceTree = "<group>"; };
 		5DC80E5B2B920029009F4956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5DC80E662B920725009F4956 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +40,7 @@
 		5DC80E3A2B91FE65009F4956 = {
 			isa = PBXGroup;
 			children = (
+				5DC80E662B920725009F4956 /* README.md */,
 				5DC80E452B91FE65009F4956 /* CureScoliosis */,
 				5DC80E442B91FE65009F4956 /* Products */,
 			);
