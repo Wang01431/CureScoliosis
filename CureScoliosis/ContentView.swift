@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {    
     var body: some View {
         NavigationView {
+            // MARK: SIDEBAR
             List {
                 Section("Scoliosis") {
                     NavigationLink {
@@ -18,7 +19,7 @@ struct ContentView: View {
                         Label("Changes", systemImage: "chart.xyaxis.line")
                     }
                 }
-
+                
                 Section("Schroth Method") {
                     NavigationLink {
                         // ..
@@ -47,6 +48,9 @@ struct ContentView: View {
                 }
             }
             .listStyle(.sidebar)
+            
+            // MARK: NO SELECTION
+            FirstView()
         }
     }
 }
