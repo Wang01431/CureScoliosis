@@ -59,8 +59,8 @@
 			children = (
 				5DC80E462B91FE65009F4956 /* CureScoliosisApp.swift */,
 				5DC80E482B91FE65009F4956 /* ContentView.swift */,
-				5DC80E572B91FFD5009F4956 /* UserInterface */,
-				5DC80E552B91FF7E009F4956 /* Core */,
+				5DC80E572B91FFD5009F4956 /* Views */,
+				5DC80E582B91FFDB009F4956 /* Commands */,
 				5DC80E4A2B91FE6D009F4956 /* Assets.xcassets */,
 				5DC80E5B2B920029009F4956 /* Info.plist */,
 				5DC80E4F2B91FE6D009F4956 /* CureScoliosis.entitlements */,
@@ -77,20 +77,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5DC80E552B91FF7E009F4956 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		5DC80E572B91FFD5009F4956 /* UserInterface */ = {
+		5DC80E572B91FFD5009F4956 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5D01AF3E2B92A2F600A4CE4E /* FirstView.swift */,
-				5DC80E582B91FFDB009F4956 /* Commands */,
 			);
-			path = UserInterface;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		5DC80E582B91FFDB009F4956 /* Commands */ = {
@@ -310,6 +302,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CureScoliosis/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cure Scoliosis";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,6 +333,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CureScoliosis/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Cure Scoliosis";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
