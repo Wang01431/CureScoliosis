@@ -15,7 +15,7 @@ struct AppCommands: Commands {
         CommandGroup(after: .appSettings) {
             Divider()
             
-            Button("Check for Updates…") {
+            Button("Check for Updates") {
                 openURL(releasesURL)
             }
         }
