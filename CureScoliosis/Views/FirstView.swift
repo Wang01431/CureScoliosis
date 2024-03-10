@@ -22,8 +22,8 @@ struct FirstView: View {
                 
                 ZStack(alignment: .leading) {
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.accentColor.opacity(0.4))
-                        .shadow(radius: 8)
+                        .fill(Color.accentColor.opacity(0.5))
+                        .shadow(radius: 10)
                     
                     HStack {
                         Text("Check Off")
@@ -37,7 +37,7 @@ struct FirstView: View {
                 ZStack(alignment: .leading) {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.gray.opacity(0.1))
-                        .shadow(radius: 8)
+                        .shadow(radius: 10)
                     
                     HStack {
                         Text("Import")
@@ -57,7 +57,7 @@ struct FirstView: View {
                             ZStack(alignment: .leading) {
                                 RoundedRectangle(cornerRadius: 10)
                                     .fill(Color.gray.opacity(0.1))
-                                    .shadow(radius: 8)
+                                    .shadow(radius: 10)
                                 
                                 HStack {
                                     Text("Suggestion \(index)")
@@ -74,9 +74,9 @@ struct FirstView: View {
                 
                 Spacer()
             }
+            .padding()
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
     }
 }
 

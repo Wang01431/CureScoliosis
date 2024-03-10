@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5D01AF3F2B92A2F600A4CE4E /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01AF3E2B92A2F600A4CE4E /* FirstView.swift */; };
+		5D9D68F52B9D6E9E00E7CE17 /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D68F42B9D6E9E00E7CE17 /* AppCommands.swift */; };
+		5D9D69032B9D70CD00E7CE17 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5D9D69052B9D70CD00E7CE17 /* Credits.rtf */; };
 		5DC80E472B91FE65009F4956 /* CureScoliosisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC80E462B91FE65009F4956 /* CureScoliosisApp.swift */; };
 		5DC80E492B91FE65009F4956 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC80E482B91FE65009F4956 /* ContentView.swift */; };
 		5DC80E4B2B91FE6D009F4956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC80E4A2B91FE6D009F4956 /* Assets.xcassets */; };
@@ -17,6 +19,9 @@
 
 /* Begin PBXFileReference section */
 		5D01AF3E2B92A2F600A4CE4E /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		5D9D68F42B9D6E9E00E7CE17 /* AppCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommands.swift; sourceTree = "<group>"; };
+		5D9D69042B9D70CD00E7CE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Base; path = Base.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5D9D69062B9D70CE00E7CE17 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = "zh-Hans.lproj/Credits.rtf"; sourceTree = "<group>"; };
 		5DC80E432B91FE65009F4956 /* CureScoliosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CureScoliosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC80E462B91FE65009F4956 /* CureScoliosisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CureScoliosisApp.swift; sourceTree = "<group>"; };
 		5DC80E482B91FE65009F4956 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +93,8 @@
 		5DC80E582B91FFDB009F4956 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				5D9D69052B9D70CD00E7CE17 /* Credits.rtf */,
+				5D9D68F42B9D6E9E00E7CE17 /* AppCommands.swift */,
 				5DC80E592B91FFFC009F4956 /* HelpCommands.swift */,
 			);
 			path = Commands;
@@ -153,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC80E4E2B91FE6D009F4956 /* Preview Assets.xcassets in Resources */,
+				5D9D69032B9D70CD00E7CE17 /* Credits.rtf in Resources */,
 				5DC80E4B2B91FE6D009F4956 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC80E5A2B91FFFC009F4956 /* HelpCommands.swift in Sources */,
+				5D9D68F52B9D6E9E00E7CE17 /* AppCommands.swift in Sources */,
 				5D01AF3F2B92A2F600A4CE4E /* FirstView.swift in Sources */,
 				5DC80E492B91FE65009F4956 /* ContentView.swift in Sources */,
 				5DC80E472B91FE65009F4956 /* CureScoliosisApp.swift in Sources */,
@@ -172,6 +181,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5D9D69052B9D70CD00E7CE17 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D9D69042B9D70CD00E7CE17 /* Base */,
+				5D9D69062B9D70CE00E7CE17 /* zh-Hans */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5DC80E502B91FE6D009F4956 /* Debug */ = {

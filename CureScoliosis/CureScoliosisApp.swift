@@ -15,6 +15,7 @@ struct CureScoliosisApp: App {
                 .frame(minWidth: 800, minHeight: 600)
         }
         .commands {
+            AppCommands()
             SidebarCommands()
             HelpCommands()
         }
