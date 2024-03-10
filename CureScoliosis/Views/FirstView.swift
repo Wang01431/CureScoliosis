@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// If there is no selection, this view appears.
 struct FirstView: View {
     var body: some View {
         ScrollView {
@@ -20,54 +21,27 @@ struct FirstView: View {
                 }
                 .font(.largeTitle)
                 
-                ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.accentColor.opacity(0.5))
-                        .shadow(radius: 10)
-                    
-                    HStack {
-                        Text("Check Off")
-                        Spacer()
-                        Image(systemName: "arrow.right")
-                    }
-                    .padding()
-                }
-                .frame(height: 50)
+                SuggestionItem(
+                    title: "Check Off",
+                    backgroundColor: .accentColor.opacity(0.5)
+                )
                 
-                ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.gray.opacity(0.1))
-                        .shadow(radius: 10)
-                    
-                    HStack {
-                        Text("Import")
-                        Spacer()
-                        Image(systemName: "arrow.right")
-                    }
-                    .padding()
-                }
-                .frame(height: 50)
+                SuggestionItem(
+                    title: "Import",
+                    backgroundColor: .gray.opacity(0.1)
+                )
                 
                 VStack(alignment: .leading) {
-                    Text("Suggestions")
-                        .font(.headline)
-                    
-                    VStack {
+                    Section {
                         ForEach(0..<5) { index in
-                            ZStack(alignment: .leading) {
-                                RoundedRectangle(cornerRadius: 10)
-                                    .fill(Color.gray.opacity(0.1))
-                                    .shadow(radius: 10)
-                                
-                                HStack {
-                                    Text("Suggestion \(index)")
-                                    Spacer()
-                                    Image(systemName: "arrow.right")
-                                }
-                                .padding()
-                            }
-                            .frame(height: 50)
+                            SuggestionItem(
+                                title: "Suggestion \(index)",
+                                backgroundColor: .gray.opacity(0.1)
+                            )
                         }
+                    } header: {
+                        Text("Suggestions")
+                            .font(.headline)
                     }
                 }
                 .padding(.top)

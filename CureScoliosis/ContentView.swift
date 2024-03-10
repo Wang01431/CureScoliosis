@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The top level of the user interface, including a sidebar and a default view.
 struct ContentView: View {    
     var body: some View {
         NavigationView {
