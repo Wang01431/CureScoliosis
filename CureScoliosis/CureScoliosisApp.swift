@@ -10,12 +10,15 @@ import SwiftUI
 @main
 struct CureScoliosisApp: App {
     var body: some Scene {
+        // MARK: MAIN WINDOW
         WindowGroup {
             ContentView()
-                .frame(minWidth: 800, minHeight: 600)
+                .frame(minWidth: 700, minHeight: 600)
         }
+        // MARK: COMMAND
         .commands {
             AppCommands()
+            FileCommands()
             SidebarCommands()
             HelpCommands()
         }

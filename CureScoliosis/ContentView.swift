@@ -7,27 +7,21 @@
 
 import SwiftUI
 
-/// The top level of the user interface, including a sidebar and a default view.
-struct ContentView: View {    
+struct ContentView: View {
     var body: some View {
         NavigationView {
             // MARK: SIDEBAR
             List {
-                Section("Scoliosis") {
-                    NavigationLink {
-                        // ..
-                    } label: {
-                        Label("Changes", systemImage: "chart.xyaxis.line")
-                    }
-                }
-                
-                Section("Schroth Method") {
+                // If user didn't exercise today, show this.
+                Section("Suggestions") {
                     NavigationLink {
                         // ..
                     } label: {
                         Label("Check Off", systemImage: "checklist")
                     }
-
+                }
+                
+                Section("Exercise") {
                     NavigationLink {
                         // ..
                     } label: {
@@ -37,21 +31,28 @@ struct ContentView: View {
                     NavigationLink {
                         // ..
                     } label: {
-                        Label("Records", systemImage: "calendar")
+                        Label("Library", systemImage: "tray.full")
                     }
-
-
+                }
+                
+                Section("Records") {
                     NavigationLink {
                         // ..
                     } label: {
-                        Label("Library", systemImage: "tray.full")
+                        Label("Scoliosis", systemImage: "chart.xyaxis.line")
+                    }
+                    
+                    NavigationLink {
+                        // ..
+                    } label: {
+                        Label("Exercise", systemImage: "calendar")
                     }
                 }
             }
             .listStyle(.sidebar)
             
             // MARK: NO SELECTION
-            FirstView()
+            Text("Select an item in the sidebar…")
         }
     }
 }
