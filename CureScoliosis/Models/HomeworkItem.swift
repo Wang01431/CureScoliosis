@@ -9,5 +9,8 @@ import Foundation
 
 struct HomeworkItem: Identifiable {
     let id: UUID = UUID()
-    // ..
+    let isCompleted: Bool = false
+    let correction: Correction
+    let countPerSet: Int
+    let set: Int = 0
 }

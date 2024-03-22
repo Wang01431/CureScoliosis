@@ -9,5 +9,7 @@ import Foundation
 
 struct Homework: Identifiable {
     let id: UUID = UUID()
-    // ..
+    let items: [HomeworkItem]
+    let date: Date
+//    let dateRange: Date
 }
